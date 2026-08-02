@@ -1,7 +1,28 @@
 aid: tripp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tripp.png
 name: Tripp
-description: Tripp is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TRIPP is a digital mental-wellness company whose consumer app delivers
+  immersive, interactive meditation, breathwork and mood-management experiences
+  across virtual-reality headsets (including Meta Quest and PlayStation VR) and
+  mobile devices. It blends guided sessions, generative visuals, spatial audio
+  and gamified "trips" to help people manage stress, focus, mood and sleep.
+  Tripp is backed by Mayfield. As of this enrichment pass Tripp operates a
+  consumer-facing application and an Intercom-powered help center but publishes
+  no public developer API, SDK, or documentation portal; its web properties sit
+  behind a bot-mitigation (captcha) wall, so no OpenAPI, llms.txt, or
+  /.well-known discovery documents were retrievable.
 url: https://raw.githubusercontent.com/api-evangelist/tripp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Wellness
+- Mental Health
+- Meditation
+- Virtual Reality
+- Consumer App
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,12 @@ maintainers:
 common:
 - type: Website
   url: https://tripp.com
+- type: Support
+  url: https://help.tripp.com
+- type: DomainSecurity
+  url: security/tripp-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
